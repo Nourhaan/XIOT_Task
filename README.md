@@ -17,7 +17,7 @@ Components :
 Project instruction :
 - open design using proteus 
 - open C file usinng AtmlStudio and dubug it using f7 key 
-- double click on ATmega328P in proteus simulation and browse to select the hex file of C file [it's created after dubugging the C file ]
+- double click on ATmega328P in proteus simulation and browse to select the hex file of C file [it's created after dubugging the C file ] and i have attached the hex file so you can use it directly.  
 - run the simulation, and if the virtual terminal is not appeared, right click on it and choose Virtual Terminal option 
 - press the switch to Turn the Led ON or OFF ,the State of the Led will be displayed on the virtual terminal 
 - the temperature will be displayed on PORTB in its Binary Formula usind leds and on Virtual Terminal 
