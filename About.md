@@ -1,12 +1,12 @@
 System Requirements :
-1. Turn ON and OFF the Led using a Switch 
+1. Turn ON and OFF the Led using a Switch ( using interrupt )  
 2. if the switch is pressed send “The Switch is pressed” to the serial monitor only one time also send the LED states ”ON” or “OFF”
 3. Measure temperature continuously and send it to the serial monitor every 3 seconds  ,and display it on another PORT(PORTB) in a       Binary presentation using leds 
 _________________________________________________________________________________________________________________________________
 
 1. Turn ON and OFF the Led using a Switch:   
 
-Firstly, PINS Configuration ( i have used output pins for the led and input pins for switch and temperature sensor )
+Firstly, PINS Configuration ( use output pins for the led and input pins for switch and temperature sensor )
 
 
 		/* PINS Configuration */
