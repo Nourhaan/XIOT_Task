@@ -24,13 +24,13 @@ Firstly, PINS Configuration ( i have used output pins for the led and input pins
 when switch is pressed the interrupt is enabled and the ISR of INT1 is executed ,in which turn ON or OFF the Led and send the state of the led to the serial monitor and indicate that the switch is pressed 
 
 
-	 ISR(INT1_vect){
-	 PORTD =PORTD^(1<<PD6);           //Toggle the led
-	 led_state++;    
-	 /*initially led_state equaled 0 ,after first press --> led_state=1 which means it is ON now (as it is odd Numebr )*/
-	serial_avr(" The switch is pressed, ");
-	//Check The Value of led_state if it's even or odd 
-	if(led_state%2==0)    //led_state is even --> the led is OFF 
+	 	 ISR(INT1_vect){
+		 PORTD =PORTD^(1<<PD6);           //Toggle the led
+		 led_state++;    
+		 /*initially led_state equaled 0 ,after first press --> led_state=1 which means it is ON now (as it is odd Numebr )*/
+		serial_avr(" The switch is pressed, ");
+		//Check The Value of led_state if it's even or odd 
+		if(led_state%2==0)    //led_state is even --> the led is OFF 
 		serial_avr(" The Led is OFF .");
 		else 
 		serial_avr(" The Led is ON .");
